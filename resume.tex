@@ -1,123 +1,176 @@
-% LaTeX file for resume 
-% This file uses the resume document class (res.cls)
-\documentclass[margin]{res} 
-\topmargin=-0.9in
-\oddsidemargin -.5in
-\evensidemargin -.5in
-\textwidth=6.0in
-\itemsep=0in
-\parsep=0in
-\textheight=20in
-% the margin option causes section titles to appear to the left of body text 
-\textwidth=6.1in % increase textwidth to get smaller right margin
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2007-2014 Todd C. Miller <Todd.Miller@sudo.ws> http://www.sudo.ws/todd
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
 
-\begin{document} 
-\name{Sonam K. Ghosh \\[12pt]} % the \\[12pt] adds a blank line after name
- 
-\address{{\bf Present Address} \\ 9 Chester St Apt 23\\ Cambridge, MA 02140 \\
-        (781) 664-7151 \\ Linkedin - www.linkedin.com/in/sonamghosh96 }
-        
-\address{{\bf Permanent Address} \\ 9350 Double R Blvd Apt 3814 \\ Reno, NV 89521 \\
-        sonamg@bu.edu \\ Github - https://github.com/sonamghosh}
+%\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper, 8pt]{extarticle}
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{color}
+\usepackage{fontawesome}
+\usepackage{enumitem}
+\usepackage{comment}
+\definecolor{mygrey}{gray}{0.80}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{0.99\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+\setlist[itemize]{leftmargin=0.7em}
+%\setlist[itemize]{rightmargin=2.0em}
+%-----------------------------------------------------------
+%\frenchspacing
+
+\begin{document}
+%\frenchspacing
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\textbf{\large Sonam K. Ghosh}  & 781-664-7151 (cell)\\
+9 Chester St&  sonamg@bu.edu \\
+Cambridge, MA  02140 & \faLinkedinSquare\hspace{0.1em}: linkedin.com/in/sonamghosh96  \faGithub\hspace{0.1em}: github.com/sonamghosh\\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
 
 
-\begin{resume} 
- 
 
-\section{Education} 
-B.S. in Electrical Engineering \& Minor in Physics, Boston University, Boston, MA \hfill May 2018 \\
-Major GPA: 3.68/4.0 \\
-Relevant Coursework: Digital Signal Processing, Quantum Physics I/II, Software Engineering, Solid State Physics, Semiconductor Physics, Intro to Quantum Information 
+\resheading{Education}
+\begin{itemize}
+\item
+	\ressubheading{Boston University}{Boston, MA}{Bachelor of Science in Electrical Engineering \& Minor in Physics, Cum Laude}{Feb. 2015 - May. 2018} 
+	\begin{itemize}
+	    \resitem{Major GPA: 3.68/4.0, Cum. GPA: 3.54/4.0}
+		%\resitem{Relevant Coursework: Digital Signal Processing, Software Engineering, Quantum Mechanics I/II}
+	\end{itemize}
+\item	
+	\ressubheading{National University of Singapore}{Singapore}{Undergraduate Exchange Student in Electrical/Computer Engineering \& Physics}{Jan. 2017 - May 2017}
 
-
-
-% Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
-\section{Technical \\ Skills}
-   \begin{tabular}{l p{5.0in}}
-   % OpenCV Matplotlib, Android Studio, Scikit, Pandas, JSON, PSPICE \\
-     \underline{Languages}: & Python, C/C++, MATLAB, Java, Swift, Basic C\#, LaTeX \\ 
-     \underline{Software}: & Git, Unix, PyTorch, QuTip, OpenCV, Matplotlib, Scikit, Pandas, Basic TensorFlow
- \end{tabular}
+\end{itemize}
 
 
+\resheading{Skills}
+\begin{description}
+\item[Languages:]
+Python, C/C{}\verb!++!, MATLAB, Java, Unix Shell, \LaTeX, Javascript, Swift, C\#
+\item[Software:]
+Git, PyTorch, TensorFlow, SciPy, Pandas, Scikit, QuTip, OpenCV, Qiskit, Google Cloud, IBM Watson Cloud, Microsoft Azure Cloud
+\end{description}
 
 
 
- 
-\section{Clearances}
-DoD Interim-Secret Clearance 
+\resheading{Work Experience}
+\begin{itemize}
+\setlength{\leftmargini}{0.5em}
+\item
+	\ressubheading{MITRE}{Bedford, MA}{Machine Learning Signal Processing Engineer}{June 2018 - October 2018}
+	\begin{itemize}
+		%\resitem{Added support for mulitple platforms to the password escrow component of the %\emph{One Identity} Identity and Access Management suite.}
+		%\resitem{Part of a team designing the Unix Privilege Management component of the \emph{One Identity} Identity and Access Management suite.}
+		%\resitem{Implemented support for forwarding Unix domain sockets in OpenSSH and merged the changes upstream.}
+		%\resitem{Continue to develop and maintain \emph{Sudo} and make regular releases.}
+		\resitem{Developed \emph{Python} code to do data preprocessing, feature extraction, feature plotting, and classification of radio-frequency signals using machine learning and signal processing techniques.}
+        \resitem{Utilized signal analysis techniques such as \emph{Empirical Mode Decomposition}, \emph{Hilbert analysis}, and \emph{Fourier-Bessel expansion analysis}.}
+        \resitem{Utilized \emph{Machine Learning} models like \emph{Random Forest Classifiers}, \emph{Support Vector Machines}, and \emph{Multi-Layer Perceptrons}, \emph{Naive Bayes}, \emph{t-Distributed Stochastic Neighbour Embedding}.}
+	\end{itemize}
+	\ressubheading{MITRE }{Bedford, MA}{Signal Processing Engineer Intern}{May 2017 - May 2018}
+	\begin{itemize}
+		\resitem{Developed \emph{Python} classes and scripts related to Fault Generation in PNT applications.}
+		\resitem{Developed \emph{C++} Physics \emph{Gravity model} for PNT application.}
+	\end{itemize}
+\item
+	\ressubheading{Quantum Communication \& Measurement Lab at Boston University}{Boston, MA}{Undegraduate Quantum Computing/Optics Researcher}{September 2017 - May 2018}
+	\begin{itemize}
+	    \resitem{Defended \emph{Senior Honors Thesis} on demonstrating the potential of a \emph{linear-optical system} to implement \emph{quantum simulations of a molecule}.}
+        \resitem{Constructed \& simulated the \emph{Hamiltonian}, calculating the \emph{eigenstates/eigenvalues}, and \emph{photon quantum walks} of a \emph{optical benzene topology} of connected directionally unbiased optical multiports using \emph{Python} and the \emph{QuTip} quantum mechanics software package}
+	\end{itemize}
+\item
+	\ressubheading{Ultrafast Optics Lab at Boston University}{Boston, MA}{Research Assistant}{September 2015 - April 2016}
+	\begin{itemize}
+	    \resitem{Conducted \emph{spectral analysis} for custom built Photothermal Spectroscopy system}
+	    \resitem{Learned the fundamentals of \emph{Photothermal Spectroscopy}, \emph{Fourier-Transform Infrared Spectroscopy}, and different types of \emph{Microscopy} }
+	    \resitem{Designed \emph{Microscope Stage and Holder} setup, wrote protocols for various microscope setups, and made \emph{MATLAB} script for counting number of cells/circular objects in a sample}
+	\end{itemize}
 
-\section{Experience}
-{\bf Machine Learning Signal Processing Engineer,} MITRE Bedford, MA \hfill \textbf{\textit{05/18-Pres.}}
-\begin{itemize} \itemsep -0.1 pt
-    %\item Developed Python class to extract features of specific signal protocols
-    %\item Developed Python class to analyze extracted features through various statistical and signal processing methods
-    \item Developed Python code to do data preprocessing, feature extraction, feature plotting, and classification of radio-frequency signals using machine learning and signal processing techniques.
-    \item Utilized signal analysis techniques such as Empirical Mode Decomposition, Hilbert analysis, and Fourier-Bessel expansion analysis.
-    \item Utilized Machine Learning models like Random Forest Classifiers, Support Vector Machines, and Multi-Layer Perceptrons, Naive Bayes, t-Distributed Stochastic Neighbour Embedding.
+%\pagebreak
+
 \end{itemize}
 
 
 
-{\bf Signal Processing Engineer Intern,} MITRE Bedford, MA \hfill \textbf{\textit{05/17-05/18}}
- \begin{itemize} \itemsep -0.5 pt  % reduce space between items
- \item Developed Python classes and scripts related to Fault Generation in PNT applications.
- \item Developed C++ Physics model for PNT application.
- \end{itemize}
+\resheading{Projects}
+\begin{description}
+\item[Hack Harvard 2018 Music Boi --] Developed app which converts text into music. App was made into a website, app, and chrome extension using \emph{Javascript}. Developed the \emph{Deep learning backend} which called \emph{IBM Watson} Tone Analyzer API for \emph{sentiment analysis} to find the emotion of the text and a double stacked \emph{LSTM Recurrent Neural Network} model made in \emph{PyTorch} and trained on the \emph{Google Cloud} platform which produced music files to listen
 
+\item[Perkins Hack 2018 Blind Gym --]  Developed proof of concept gym (Pathogym) for visually impaired individuals. Was in charge of creating a voice recognition component utilizing \emph{C\#} paired up with an \emph{Arduino} setup using \emph{C}.
 
+\item[Make MIT 2018 CameraPiano --] Developed system where an individual with a camera can turn any surface into a playable piano. Utilized \emph{OpenCV} computer vision tools in \emph{Python} to detect fingers and play music notes. Future work involves scaling system and \emph{data analytics}
 
-{\bf Quantum Computing Researcher,} Quantum Communication \& Measurement Lab \hfill  \textbf{\textit{09/17-05/18}}
-\begin{itemize} \itemsep -0.1 pt
-\item Defended Senior Honors Thesis on demonstrating the potential of a linear-optical system to implement quantum simulations of a molecular system.
-\item Constructed \& simulated the Hamiltonian, calculating the eigenstates/eigenvalues, and photon quantum walks of a optical benzene setup of connected directionally unbiased optical multiports.
+\item[Make Haravrd 2018 Triangulation Person Detector --] Developed system to turn off the lights in a room if a person leaves via the triangulated distance from Wi-Fi beacons. Created an app in \emph{Java} to acquire Wi-Fi data to communicate with a Raspberry Pi to perform calculations. Future work involves a \emph{KNN}-based \emph{Machine Learning} model in \emph{Python} to train the software.
+\end{description}
+
+\resheading{Leadership Activities}
+\begin{itemize}
+    \item 	\ressubheading{Society of Asian Scientists \& Engineers}{Boston, MA}{Senior Advisor}{June 2018 - Present}
+    \begin{itemize} 
+        \item Advising and helping out with the 2018-2019 SASE E-Board with organization and logistics related to event planning, future events, and connections.
+    \end{itemize}
+    \item 	\ressubheading{Society of Asian Scientists \& Engineers}{Boston, MA}{Secretary, Vice President}{May 2016 - May 2018}
+    \begin{itemize} 
+        \resitem{Created weekly powerpoints for E-Board meetings, managed the clubs email with both reading/responding, and organizing the Google Drive.}
+        \resitem{Lead teams of two or three people to do various projects and tasks.}
+        \resitem{Mentored and worked closely with freshman/sophomore representatives and corporate relations chair}
+    \end{itemize}
 \end{itemize}
 
-
-
- 
-
-
-
-{\bf Research Assistant,} Ultrafast Optics Lab BU, Boston, MA \hfill \textbf{\textit{10/15-04/16}}
-			\begin{itemize} \itemsep -2pt
-			\item  Conducted spectral analysis for custom built Photothermal Spectroscopy system
-			\item Learned the fundamentals of Photothermal Spectroscopy, Fourier-Transform Infrared Spectroscopy, and different types of Microscopy 
-			\item Desgned Microscope Stage and Holder setup, wrote protocols for various microscope setups, and made MATLAB script for counting number of cells/circular objects in a sample
-			\end{itemize}
-			
-\section{Technical \\ Projects} 
-\textbf{\underline{Travel Startup Social Network iOS App}}: Currently developing \textbf{iOS} app in \textbf{Swift} with group of friends aiming to create a \textbf{startup} revolving around a travel-based social network. \\
-\textbf{\underline{PerkinHacks 2018 Blind Gym}}: Developed proof of concept gym (Pathogym) for visually impaired individuals. Was in charge of creating a voice recognition component utilizing \textbf{C\#} paired up with an \textbf{Arduino} setup using \textbf{C}. \\
-\textbf{\underline{MakeMIT 2018 CameraPiano}}: Developed system where an individual with a camera can turn any surface into a playable piano. Utilized \textbf{OpenCV} computer vision tools in \textbf{Python} to detect fingers and play music notes. Future work involves scaling system and \textbf{data analytics}.\\
-\textbf{\underline{MakeHarvard 2018 Triangulation Person Detector}}: Developed system to turn off the lights in a room if a person leaves via the triangulated distance from Wi-Fi beacons. Created an app in \textbf{Java} to acquire Wi-Fi data to communicate with a Raspberry Pi to perform calculations. Future work involves a \textbf{KNN}-based \textbf{Machine Learning} model in \textbf{Python} to train the software. \\
-
-%\textbf{\underline{MATLAB Personal Portfolio GUI}}: In a team of three, we created a functional GUI which gave the user a stock portfolio for choosing stocks that were analyzed via markowitz mean-variance analysis. 			
-			
-			
-			
-			
-			
-\section{Leadership   Activities} 
-               {\bf Secretary,} Society of Asian Scientists and Engineers, Boston, MA    \hfill         2016-2018
-                \begin{itemize} \itemsep -0.5pt
-                \item Creates weekly powerpoints for E-Board meetings, manages the clubs email with both reading/responding, and organizing the Google Drive.
-                \item Leads teams of two or three people to do various projects and tasks.
-              \item Mentors and works closely with underclassmen reps and corporate relations chair
-
-		 \end{itemize}
-            {\bf Senior Advisor,} Society of Asian Scientists and Engineers, Boston, MA \hfill 2018-Present
-            \begin{itemize} \itemsep -0.5pt
-                \item Advising and helping ut with the 2018-2019 SASE E-Board with organization and logistics 
-            \end{itemize}
-
- 
-\section{Interests \\ \& Activities}
-SASE, Machine Intelligence Club, Travelling the world, Mentoring, Learning Japanese \& Korean
-\end{resume} 
-\end{document} 
+\resheading{Interests \& Activities}
+Member of Society of Asian Scientists and Engineers (SASE), Member IEEE Eta Kappu Nu ECE Honor Member of Society, Member of Machine Intelligence Community (MIC Club), Mentoring, Tutoring, Travelling the world and experiencing new cultures, Learning Japanese \& Korean
 
 
 
+\begin{comment}
+\pagebreak
+
+\resheading{Publications}
+
+\begin{description}
+\item["Security-Enhanced Darwin: Porting SELinux to Mac OS X",]
+\emph{Proceedings from the Third Annual Security Enhanced Linux Symposium} in Baltimore, MD, 2007.
+\item["{\sc \bf UNIX} System Administration Handbook, Third Edition",]
+contributing author.
+\item["strlcpy and strlcat:  Consistent, Safe, String Copy and Concatenation",]
+\emph{Proceedings from the USENIX Annual Technical Conference} in Monterey, CA, 1999.
+\item["satool:  A System Administrators Cockpit",]
+\emph{Proceedings from the USENIX LISA VII Conference (Large Installation Systems Administration)} in Monterey, CA, 1993.
+\end{description}
+
+\resheading{Patents}
+
+\begin{description}
+\item[Furlong, Wesley J., Schlossnagle, George, Miller, Todd.  2014.]
+Method and system for adaptive delivery of digital messages.
+U.S. Patent 8,782,184 filed September 20, 2013, and issued July 15, 2014.
+\end{description}
+\end{comment}
+
+
+
+\end{document}
