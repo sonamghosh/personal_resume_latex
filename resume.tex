@@ -18,7 +18,7 @@
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
-
+%\setlength{\topmargin}{-0.25in}  % change this later
 % Adjust margins to 0.5in on all sides
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
@@ -29,10 +29,22 @@
 %Custom commands
 \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
 \newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{0.99\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+
 \newcommand{\ressubheading}[4]{
-\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+\begin{tabular*}{7.40in}{l@{\extracolsep{\fill}}r}
 		\textbf{#1} & #2 \\
 		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+% New Command
+\newcommand{\rehead}[2]{
+\begin{tabular*}{7.40in}{l@{\extracolsep{\fill}}r}
+        \textit{#1} & \textit{#2} \\
+\end{tabular*}\vspace{-6pt}}
+% New Command
+\newcommand{\recomm}[2]{
+\begin{tabular*}{7.40in}{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{#2} \\
 \end{tabular*}\vspace{-6pt}}
 
 \setlist[itemize]{leftmargin=0.7em}
@@ -70,7 +82,7 @@ Cambridge, MA  02140 & \faLinkedinSquare\hspace{0.1em}: linkedin.com/in/sonamgho
 \resheading{Skills}
 \begin{description}
 \item[Languages:]
-Python, C/C{}\verb!++!, MATLAB, Java, Unix Shell, \LaTeX, Javascript, Swift, C\#
+Python, C/C{}\verb!++!, MATLAB, Java, Unix, \LaTeX, Javascript, Swift, C\#, ReactJS
 \item[Software:]
 Git, PyTorch, TensorFlow, SciPy, Pandas, Scikit, QuTip, OpenCV, Qiskit, Google Cloud, IBM Watson Cloud, Microsoft Azure Cloud
 \end{description}
@@ -89,9 +101,11 @@ Git, PyTorch, TensorFlow, SciPy, Pandas, Scikit, QuTip, OpenCV, Qiskit, Google C
 		%\resitem{Continue to develop and maintain \emph{Sudo} and make regular releases.}
 		\resitem{Developed \emph{Python} code to do data preprocessing, feature extraction, feature plotting, and classification of radio-frequency signals using machine learning and signal processing techniques.}
         \resitem{Utilized signal analysis techniques such as \emph{Empirical Mode Decomposition}, \emph{Hilbert analysis}, and \emph{Fourier-Bessel expansion analysis}.}
-        \resitem{Utilized \emph{Machine Learning} models like \emph{Random Forest Classifiers}, \emph{Support Vector Machines}, and \emph{Multi-Layer Perceptrons}, \emph{Naive Bayes}, \emph{t-Distributed Stochastic Neighbour Embedding}.}
+        \resitem{Utilized \emph{Machine Learning} models like \emph{Random Forest Classifiers}, \emph{Support Vector Machines}, \emph{Multi-Layer Perceptrons}, \emph{Naive Bayes}, and used \emph{t-Distributed Stochastic Neighbour Embedding} for feature plotting.}
 	\end{itemize}
-	\ressubheading{MITRE }{Bedford, MA}{Signal Processing Engineer Intern}{May 2017 - May 2018}
+	%%%%
+	\vspace{-3pt}
+	\rehead{Signal Processing Engineer Intern}{May 2017 - May 2018}
 	\begin{itemize}
 		\resitem{Developed \emph{Python} classes and scripts related to Fault Generation in PNT applications.}
 		\resitem{Developed \emph{C++} Physics \emph{Gravity model} for PNT application.}
@@ -118,22 +132,24 @@ Git, PyTorch, TensorFlow, SciPy, Pandas, Scikit, QuTip, OpenCV, Qiskit, Google C
 
 \resheading{Projects}
 \begin{description}
+\item[Wellesley Hacks 2018 Find StockAR --]Developed \emph{AR} app and website to identify logos for associated stocks with the ability to purchase shares, predict stock behaviour, and provide analyst advice. There was a \emph{Javascript} frontend for the website and \emph{ViroReact} backend for the AR and app. Developed the \emph{Deep Learning} and \emph{Data Science} stack which utilized finance APIs to form stock price datasets and a \emph{Dual Attention LSTM Recurrent Neural Network} model in \emph{PyTorch} to do \emph{time series} predicting. Finance APIs and the \emph{Plotly} package were used to make graphs and obtain stock metrics for analysis. The project \textbf{won} the \textbf{Kensho Case Study} and \textbf{Algolia search API} awards.
+
 \item[Hack Harvard 2018 Music Boi --] Developed app which converts text into music. App was made into a website, app, and chrome extension using \emph{Javascript}. Developed the \emph{Deep learning backend} which called \emph{IBM Watson} Tone Analyzer API for \emph{sentiment analysis} to find the emotion of the text and a double stacked \emph{LSTM Recurrent Neural Network} model made in \emph{PyTorch} and trained on the \emph{Google Cloud} platform which produced music files to listen
 
 \item[Perkins Hack 2018 Blind Gym --]  Developed proof of concept gym (Pathogym) for visually impaired individuals. Was in charge of creating a voice recognition component utilizing \emph{C\#} paired up with an \emph{Arduino} setup using \emph{C}.
 
 \item[Make MIT 2018 CameraPiano --] Developed system where an individual with a camera can turn any surface into a playable piano. Utilized \emph{OpenCV} computer vision tools in \emph{Python} to detect fingers and play music notes. Future work involves scaling system and \emph{data analytics}
 
-\item[Make Haravrd 2018 Triangulation Person Detector --] Developed system to turn off the lights in a room if a person leaves via the triangulated distance from Wi-Fi beacons. Created an app in \emph{Java} to acquire Wi-Fi data to communicate with a Raspberry Pi to perform calculations. Future work involves a \emph{KNN}-based \emph{Machine Learning} model in \emph{Python} to train the software.
 \end{description}
+
 
 \resheading{Leadership Activities}
 \begin{itemize}
     \item 	\ressubheading{Society of Asian Scientists \& Engineers}{Boston, MA}{Senior Advisor}{June 2018 - Present}
     \begin{itemize} 
         \item Advising and helping out with the 2018-2019 SASE E-Board with organization and logistics related to event planning, future events, and connections.
-    \end{itemize}
-    \item 	\ressubheading{Society of Asian Scientists \& Engineers}{Boston, MA}{Secretary, Vice President}{May 2016 - May 2018}
+    \end{itemize} \vspace{-6pt}
+    \rehead{Junior Representative, Secretary, Vice President}{May 2016 - May 2018}
     \begin{itemize} 
         \resitem{Created weekly powerpoints for E-Board meetings, managed the clubs email with both reading/responding, and organizing the Google Drive.}
         \resitem{Lead teams of two or three people to do various projects and tasks.}
@@ -142,7 +158,7 @@ Git, PyTorch, TensorFlow, SciPy, Pandas, Scikit, QuTip, OpenCV, Qiskit, Google C
 \end{itemize}
 
 \resheading{Interests \& Activities}
-Member of Society of Asian Scientists and Engineers (SASE), Member IEEE Eta Kappu Nu ECE Honor Member of Society, Member of Machine Intelligence Community (MIC Club), Mentoring, Tutoring, Travelling the world and experiencing new cultures, Learning Japanese \& Korean
+Society of Asian Scientists and Engineers (SASE), IEEE Eta Kappu Nu ECE Honor Member of Society, Machine Intelligence Community (MIC Club), Mentoring, Tutoring, Travelling the world and experiencing new cultures, Learning Japanese \& Korean
 
 
 
