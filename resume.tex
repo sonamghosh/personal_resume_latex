@@ -1,13 +1,8 @@
-% resume.tex
-%
-% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
-% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
-% (c) 2007-2014 Todd C. Miller <Todd.Miller@sudo.ws> http://www.sudo.ws/todd
-%
-% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
-
-%\documentclass[letterpaper,10pt]{article}
 \documentclass[letterpaper, 8pt]{extarticle}
+\usepackage{geometry}
+%\usepackage{lmodern}
+\usepackage[smallscripts]{moresize}
+
 %-----------------------------------------------------------
 \usepackage[empty]{fullpage}
 \usepackage{color}
@@ -54,6 +49,10 @@
 %\frenchspacing
 
 \begin{document}
+
+
+\fontsize{8pt}{9pt}\selectfont  % readjusted size
+
 %\frenchspacing
 \begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
 \textbf{\large Sonam K. Ghosh}  & 781-664-7151 (cell)\\
@@ -72,9 +71,9 @@ Cambridge, MA  02140 & \faLinkedinSquare\hspace{0.1em}: linkedin.com/in/sonamgho
 \item
 	\ressubheading{Boston University}{Boston, MA}{Bachelor of Science in Electrical Engineering \& Minor in Physics, Cum Laude}{Feb. 2015 - May. 2018} 
 	\begin{itemize}
-	    \resitem{Major GPA: 3.68/4.0, Cum. GPA: 3.54/4.0}
+	    \resitem{Major GPA: 3.68/4.0, GPA: 3.54/4.0}
 		%\resitem{Relevant Coursework: Digital Signal Processing, Software Engineering, Quantum Mechanics I/II}
-		\resitem{Interests --- Quantum Computing, Machine Learning, Data Science, Computational Science}
+		\resitem{Interests --- Quantum Computing, Machine Learning, Data Science, Computational Science, Software Development}
 	\end{itemize}
 
 %\item	
@@ -86,9 +85,9 @@ Cambridge, MA  02140 & \faLinkedinSquare\hspace{0.1em}: linkedin.com/in/sonamgho
 \resheading{Skills}
 \begin{description}
 \item[Languages:]
-Python, C/C{}\verb!++!, MATLAB, Julia, Javascript, NodeJS, Java, Unix, \LaTeX, Swift, C\#, ReactJS
+Python, C/C{}\verb!++!, MATLAB, Julia, Javascript, NodeJS, Java, Unix, \LaTeX, Swift, C\#, React, Git
 \item[Software:]
-Git, PyTorch, TensorFlow, Keras, SciPy, Pandas, Scikit, QuTip, OpenCV, Qiskit, Google Cloud, IBM Watson, Microsoft Azure
+PyTorch, TensorFlow, Keras, SciPy, Pandas, Scikit, Forest, QuTip, OpenCV, Qiskit, Google Cloud, IBM Watson, Microsoft Azure
 \end{description}
 
 
@@ -104,7 +103,7 @@ Git, PyTorch, TensorFlow, Keras, SciPy, Pandas, Scikit, QuTip, OpenCV, Qiskit, G
 		%\resitem{Implemented support for forwarding Unix domain sockets in OpenSSH and merged the changes upstream.}
 		%\resitem{Continue to develop and maintain \emph{Sudo} and make regular releases.}
 		\resitem{Developed \emph{Python} code to do data preprocessing, feature extraction, feature plotting, and classification of radio-frequency signals using machine learning and signal processing techniques.}
-        \resitem{Utilized signal analysis techniques such as \emph{Empirical Mode Decomposition}, \emph{Hilbert analysis}, and \emph{Fourier-Bessel expansion analysis}.}
+        \resitem{Used signal analysis techniques such as \emph{Empirical Mode Decomposition}, \emph{Hilbert analysis}, and \emph{Fourier-Bessel series} for feature selection.}
         \resitem{Utilized \emph{Machine Learning} models like \emph{Random Forest Classifiers}, \emph{Support Vector Machines}, \emph{Multi-Layer Perceptrons}, \emph{Naive Bayes}, and used \emph{t-Distributed Stochastic Neighbour Embedding} for feature plotting.}
 	\end{itemize}
 	%%%%
@@ -136,6 +135,7 @@ Git, PyTorch, TensorFlow, Keras, SciPy, Pandas, Scikit, QuTip, OpenCV, Qiskit, G
 
 \resheading{Projects}
 \begin{description}
+\item[Make Harvard 2019 Save Boi --] Developed \emph{AR} and \emph{anomaly detection} prototype steering wheel with embedded sensors for cars to record heart rate data to prevent medical related accidents such as heart attacks or shortness of breath from individuals. Used \emph{Python} and \emph{PyTorch} to train a \emph{LSTM Encoder Decoder} model on anomaly data from ecg data and heart rate data collected from the sensors via an \emph{Arduino}
 \item[Local Hack Day 2018 Essay Boi --] Developed mobile app that takes a picture of handwritten text and creates a Google Docs document with the extracted text. Developed the backend using \emph{NodeJS Javascript} scripts to call upon the Imgur API to upload a taken camera image and send it to the \emph{Microsoft Azure Computer Vision} API to do optical character recognition on the text followed by parsing the text correctly into a string which is then sent to a \emph{Google Drive API} for creation of a document. Project won \textbf{Best Azure Hack} out of 54 projects.
 
 \begin{comment}
@@ -168,7 +168,7 @@ Git, PyTorch, TensorFlow, Keras, SciPy, Pandas, Scikit, QuTip, OpenCV, Qiskit, G
     \item \ressubheading{Machine Intelligence Community}{Boston, MA}{Active Member/Speaker}{September 2018 - Present}
     \begin{itemize}
         \resitem{Contribute latest news regarding research in Artificial Intelligence to club.}
-        \resitem{Gave joint research talk with another member on the Geometric Understanding of Deep Learning with Manifold Theory}
+        \resitem{Gave talk, discussion, and demo on the \textit{Neural Ordinary Differential Equations} paper and research by Chen et.al}
     \end{itemize}
 \end{itemize}
 
