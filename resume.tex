@@ -1,0 +1,228 @@
+\documentclass[letterpaper, 8pt]{extarticle}
+\usepackage{geometry}
+%\usepackage{lmodern}
+\usepackage[smallscripts]{moresize}
+
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{color}
+\usepackage{fontawesome}
+\usepackage{enumitem}
+\usepackage{comment}
+\definecolor{mygrey}{gray}{0.80}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+%\setlength{\topmargin}{-0.25in}  % change this later
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.8in}
+\addtolength{\textheight}{1.1in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{0.99\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{7.40in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+% New Command
+\newcommand{\rehead}[2]{
+\begin{tabular*}{7.40in}{l@{\extracolsep{\fill}}r}
+        \textit{#1} & \textit{#2} \\
+\end{tabular*}\vspace{-6pt}}
+% New Command
+\newcommand{\recomm}[2]{
+\begin{tabular*}{7.40in}{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{#2} \\
+\end{tabular*}\vspace{-6pt}}
+
+\setlist[itemize]{leftmargin=0.7em}
+%\setlist[itemize]{rightmargin=2.0em}
+%-----------------------------------------------------------
+%\frenchspacing
+
+\begin{document}
+
+
+\fontsize{8pt}{9pt}\selectfont  % readjusted size
+
+%\frenchspacing
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\textbf{\large Sonam K. Ghosh}  & 781-664-7151 (cell)\\
+754 Post St&  sonamg@bu.edu \\
+San Francisco, CA  94109 & \faLinkedinSquare\hspace{0.1em}: linkedin.com/in/sonamghosh96  \faGithub\hspace{0.1em}: github.com/sonamghosh
+\faGlobe\hspace{0.1em}: devpost.com/sonamghosh \\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+
+
+\resheading{Education}
+\begin{itemize}
+\item
+	\ressubheading{Boston University}{Boston, MA}{Bachelor of Science in Electrical Engineering \& Minor in Physics, Cum Laude}{Feb. 2015 - May. 2018} 
+	\begin{itemize}
+	    \resitem{Major GPA: 3.68/4.0, Overall GPA: 3.54/4.0}
+		%\resitem{Relevant Coursework: Digital Signal Processing, Software Engineering, Quantum Mechanics I/II}
+	\end{itemize}
+
+%\item	
+	%\ressubheading{National University of Singapore}{Singapore}{Undergraduate %Exchange Student in Electrical/Computer Engineering \& Physics}{Jan. 2017 %- May 2017}
+
+\end{itemize}
+
+
+\resheading{Skills}
+\begin{description}
+\item[Languages:]
+Python, C/C{}\verb!++!, SQL (Presto, Hive), Javascript (Node, React),  MATLAB, Julia, Java, Unix, \LaTeX, Git/Mercurial
+\item[Tools:]
+PyTorch, Dataswarm, Apache Airflow, SciPy, Pandas, Scikit, MongoDB, OpenCV, Google Cloud, IBM Watson, Microsoft Azure
+\end{description}
+
+
+
+\resheading{Work Experience}
+\begin{itemize}
+\setlength{\leftmargini}{0.5em}
+
+\item
+    \ressubheading{Accenture @ Facebook}{San Francisco, CA}{Business \& Integration Arch Sr Analyst / Data Engineer}{June 2019 - Present}
+    \begin{itemize}
+        \resitem{Pipelinessss, Dataswarm, SQL stufff, Optimization, team work, working with people, Pythonnn } 
+        \resitem{MeTrIcS} 
+    \end{itemize}
+
+
+
+\item
+	\ressubheading{MITRE}{Bedford, MA}{Machine Learning Signal Processing Engineer}{May 2017 - October 2018}
+	\begin{itemize}
+		%\resitem{Added support for mulitple platforms to the password escrow component of the %\emph{One Identity} Identity and Access Management suite.}
+		%\resitem{Part of a team designing the Unix Privilege Management component of the \emph{One Identity} Identity and Access Management suite.}
+		%\resitem{Implemented support for forwarding Unix domain sockets in OpenSSH and merged the changes upstream.}
+		%\resitem{Continue to develop and maintain \emph{Sudo} and make regular releases.}
+		\resitem{Developed \emph{Python} code to do data preprocessing, feature extraction, feature plotting, and classification of radio-frequency signals using machine learning and signal processing techniques.}
+        \resitem{Used signal analysis techniques such as \emph{Empirical Mode Decomposition}, \emph{Hilbert analysis}, and \emph{Fourier-Bessel series} for feature selection.}
+        \resitem{Utilized \emph{Machine Learning} models like \emph{Random Forest Classifiers}, \emph{Support Vector Machines}, \emph{Multi-Layer Perceptrons}, \emph{Naive Bayes}, and used \emph{t-Distributed Stochastic Neighbour Embedding} for feature plotting.}
+        \resitem{METRICS!!!!   sdjkbnffsdhjbnsdfhjbsdfhj}
+	\end{itemize}
+	%%%%
+	\vspace{-3pt}
+	\rehead{Signal Processing Engineer Intern}{}
+	\begin{itemize}
+		\resitem{Developed \emph{Python} classes and scripts related to Fault Generation in PNT applications.}
+		\resitem{Developed \emph{C++} Physics \emph{Gravity model} for PNT application.}
+		\resitem{Metric??? dasbnasdjbndasjbndasj}
+	\end{itemize}
+\item
+	\ressubheading{Quantum Communication \& Measurement Lab at Boston University}{Boston, MA}{Undegraduate Quantum Computing/Optics Researcher}{September 2017 - May 2018}
+	\begin{itemize}
+	    \resitem{Defended \emph{Senior Honors Thesis} on demonstrating the potential of a \emph{linear-optical system} to implement \emph{quantum simulations of a molecule}.}
+        \resitem{Constructed \& simulated the \emph{Hamiltonian}, calculating the \emph{eigenstates/eigenvalues}, and \emph{photon quantum walks} of a \emph{optical benzene topology} of connected directionally unbiased optical multiports using \emph{Python} and the \emph{QuTip} quantum mechanics software package}
+        \item{METRICS!!!   asdhnikajshdsijkhnasdikhdnas }
+	\end{itemize}
+
+
+%\pagebreak
+
+\end{itemize}
+
+
+
+\resheading{Selected Projects}
+
+
+
+\begin{itemize}
+\setlength{\leftmargini}{0.5em}
+\item
+	\ressubheading{Hewwo}{KITTYY}{E-Girl Engineer}{Jan 0000 - Sept 2123}
+	\begin{itemize}
+		\resitem{uwu}
+        \resitem{owo}
+	\end{itemize}
+
+\end{itemize}
+
+
+\begin{description}
+\item[Make Harvard 2019 Save Boi --] Developed \emph{AR} and \emph{anomaly detection} prototype steering wheel with embedded sensors for cars to record heart rate data to prevent medical related accidents such as heart attacks or shortness of breath from individuals. Used \emph{Python} and \emph{PyTorch} to train a \emph{LSTM Encoder Decoder} model on anomaly data from ecg data and heart rate data collected from the sensors via an \emph{Arduino}
+\item[Local Hack Day 2018 Essay Boi --] Developed mobile app that takes a picture of handwritten text and creates a Google Docs document with the extracted text. Developed the backend using \emph{NodeJS Javascript} scripts to call upon the Imgur API to upload a taken camera image and send it to the \emph{Microsoft Azure Computer Vision} API to do optical character recognition on the text followed by parsing the text correctly into a string which is then sent to a \emph{Google Drive API} for creation of a document. Project won \textbf{Best Azure Hack} out of 54 projects.
+
+\begin{comment}
+\item[Boston Hacks 2018 Vetricle --] Developed social network meet up app and website for Veterans to use to connect to other veterans and do projects and activities together. \emph{Javascript}, \emph{ReactJS/Native}, and \emph{Google Firebase} are used to create the app and website. \emph{Collaborative Filtering} through \emph{Cosine distance} and a \emph{Neural autoencoder} is used to create a friend recommender system made in \emph{Python} and \emph{PyTorch}. 
+\end{comment}
+
+\item[Wellesley Hacks 2018 Find StockAR --]Developed \emph{AR} app and website to identify logos for associated stocks with the ability to purchase shares, predict stock behaviour, and provide analyst advice. There was a \emph{Javascript} frontend for the website and \emph{ViroReact} backend for the AR and app. Developed the \emph{Deep Learning} and \emph{Data Science} stack which utilized finance APIs to form stock price datasets and a \emph{Dual Attention LSTM Recurrent Neural Network} model in \emph{PyTorch} to do \emph{time series} predicting. Finance APIs and the \emph{Plotly} package were used to make graphs and obtain stock metrics for analysis. The project \textbf{won} the \textbf{Kensho Case Study} and \textbf{Algolia search API} awards.
+
+\item[Hack Harvard 2018 Music Boi --] Developed app which converts text into music. App was made into a website, app, and chrome extension using \emph{Javascript}. Developed the \emph{Deep learning backend} which called \emph{IBM Watson} Tone Analyzer API for \emph{sentiment analysis} to find the emotion of the text and a double stacked \emph{LSTM Recurrent Neural Network} model made in \emph{PyTorch} and trained on the \emph{Google Cloud} platform which produced music files to listen
+
+\item[Perkins Hack 2018 Blind Gym --]  Developed proof of concept gym (Pathogym) for visually impaired individuals. Was in charge of creating a voice recognition component utilizing \emph{C\#} paired up with an \emph{Arduino} setup using \emph{C}.
+
+\item[Make MIT 2018 CameraPiano --] Developed system where an individual with a camera can turn any surface into a playable piano. Utilized \emph{OpenCV} computer vision tools in \emph{Python} to detect fingers and play music notes. Future work involves scaling system and \emph{data analytics}
+
+\end{description}
+
+
+
+%% Still Debating on Removal or Reformatting %%%%
+\begin{comment}
+\resheading{Leadership Activities}
+\begin{itemize}
+    
+    \item \ressubheading{Machine Intelligence Community}{Boston, MA}{Active Member/Speaker}{September 2018 - Present}
+    \begin{itemize}
+        \resitem{Contribute latest news regarding research in Artificial Intelligence to club.}
+        \resitem{Gave talk, discussion, and demo on the \textit{Neural Ordinary Differential Equations} paper and research by Chen et.al}
+    \end{itemize}
+\end{itemize}
+\end{comment}
+
+%%%%%%%% might bring back the below one lel 
+
+
+%%% Commenting Out %%%
+\begin{comment}
+\resheading{Interests \& Activities}
+Society of Asian Scientists and Engineers (SASE), IEEE Eta Kappu Nu ECE Honor Member of Society, Machine Intelligence Community (MIC Club), Mentoring, Tutoring, Travelling the world and experiencing new cultures, Learning Japanese \& Korean
+\end{comment}
+
+
+\begin{comment}
+\pagebreak
+
+\resheading{Publications}
+
+\begin{description}
+\item["Security-Enhanced Darwin: Porting SELinux to Mac OS X",]
+\emph{Proceedings from the Third Annual Security Enhanced Linux Symposium} in Baltimore, MD, 2007.
+\item["{\sc \bf UNIX} System Administration Handbook, Third Edition",]
+contributing author.
+\item["strlcpy and strlcat:  Consistent, Safe, String Copy and Concatenation",]
+\emph{Proceedings from the USENIX Annual Technical Conference} in Monterey, CA, 1999.
+\item["satool:  A System Administrators Cockpit",]
+\emph{Proceedings from the USENIX LISA VII Conference (Large Installation Systems Administration)} in Monterey, CA, 1993.
+\end{description}
+
+\resheading{Patents}
+
+\begin{description}
+\item[Furlong, Wesley J., Schlossnagle, George, Miller, Todd.  2014.]
+Method and system for adaptive delivery of digital messages.
+U.S. Patent 8,782,184 filed September 20, 2013, and issued July 15, 2014.
+\end{description}
+\end{comment}
+
+
+
+\end{document}
