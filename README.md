@@ -25,3 +25,6 @@
 17. Fixed typo where incorrect name for StockFindAR project was used as well as typo for Latin Honors in Experience.
 18. Used github shortening url to put github urls.
 19. Added Azure Hackathon and Hack the Heights to Selected Projects section. (Will include metric to Azure Hacks if project wins a prize).
+20. Renamed Leadership activities to Extracurricular section.
+21. Modified the work-esque descriptions of EC's like SASE and MIC to a single sentence description that gets the general information across.
+22. Put in future project for MIC and included Eta Kappa Nu
