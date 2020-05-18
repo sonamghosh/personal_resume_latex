@@ -72,7 +72,7 @@
 
 \begin{document}
 
-\fontsize{8pt}{9pt}\selectfont  % readjusted size
+\fontsize{7pt}{8pt}\selectfont  % readjusted size
 
 %\frenchspacing
 \begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
@@ -103,9 +103,10 @@ San Francisco, CA  94109 & \faLinkedinSquare\hspace{0.1em}: \genlink{linkedin.co
 \resheading{Skills}
 \begin{description}
 \item[Languages:]
-Python, C/C{}\verb!++!, SQL (Presto, Hive), Javascript (Node, React, Vue),  MATLAB, Julia, Java, Unix, \LaTeX, Git/Mercurial
+Python, C/C{}\verb!++!, SQL (Presto, Hive, Spark, MySQL), Javascript (Node, React, Vue),  MATLAB, Julia, Java, Unix, \LaTeX, Git/Mercurial
+\item[Databases:] Hive, Scuba, Cubrick, ODS, MongoDB
 \item[Software:]
-PyTorch, Dataswarm, Apache Airflow, SciPy, Pandas, Scikit, MongoDB, OpenCV, Google Cloud, IBM Watson, Microsoft Azure
+PyTorch, Dataswarm, Apache Airflow, Pandas, SciPy, Scikit, Apache Spark, Google Cloud, IBM Watson, Microsoft Azure
 \end{description}
 
 \resheading{Work Experience}
@@ -113,16 +114,17 @@ PyTorch, Dataswarm, Apache Airflow, SciPy, Pandas, Scikit, MongoDB, OpenCV, Goog
 \setlength{\leftmargini}{0.5em}
 
 \item
-    \ressubheading{Accenture @ Facebook}{Menlo Park, CA}{Business \& Integration Arch Sr Analyst / Data Engineer}{June 2019 - Present}
+    \ressubheading{Accenture @ Facebook}{Menlo Park, CA}{\underline{Data Engineer}}{June 2019 - Present}
     \begin{itemize}
         \resitem{Part of the Infrastructure Data Science group assisting Data Scientists in maintaining and optimizing their \emph{Dataswarm} data pipelines.}
         \resitem{Developed pipeline using \emph{Python}, \emph{Presto SQL}, and the \emph{Dataswarm} data pipeline workflow scheduler to monitor and analyze our teams portfolio of pipelines owned by Data Scientists, Data Engineers and Software Engineers across Facebook.}
-        \resitem{Assisted in critical ad hoc software migrations for pipelines in our teams portfolio such as rewriting a pipeline in a different \emph{SQL} engine.}
+        \resitem{Assisted in critical ad hoc software migrations for pipelines in our teams portfolio such as using a different \emph{SQL} engine or database.}
         \resitem{Built a dashboard to monitor software migrations, pipeline computation cost, and a recreated pipeline health model using \emph{Presto SQL} queries.}
+        \resitem{Assisted team of Data Engineers in creating a \emph{Python} testing framework to validate pipelines being migrated from \emph{Hive} to \emph{Spark}.}
     \end{itemize}
 
 \item
-	\ressubheading{MITRE}{Bedford, MA}{Machine Learning Signal Processing Engineer}{May 2017 - October 2018}
+	\ressubheading{MITRE}{Bedford, MA}{\underline{Machine Learning Signal Processing Engineer}}{May 2017 - October 2018}
 	\begin{itemize}
 	
 	    \resitem{Implemented \emph{Machine Learning} models in \emph{Python} to perform the classification of radio-frequency signals from RF devices.}
@@ -136,13 +138,13 @@ PyTorch, Dataswarm, Apache Airflow, SciPy, Pandas, Scikit, MongoDB, OpenCV, Goog
 	\end{itemize}
 	%%%%
 	\vspace{-3pt}
-	\rehead{Signal Processing Engineer Intern}{}
+	\rehead{\underline{Signal Processing Engineer Intern}}{}
 	\begin{itemize}
 		\resitem{Developed \emph{Python} tools to help with fault generation models in navigation applications.}
 		\resitem{Implemented corrected Gravity model calculations in \emph{C++} to help with accurate navigation simulations.}
 	\end{itemize}
 \item
-	\ressubheading{Quantum Communication \& Measurement Lab at Boston University}{Boston, MA}{Undegraduate Quantum Computing/Optics Researcher}{September 2017 - May 2018}
+	\ressubheading{Quantum Communication \& Measurement Lab at Boston University}{Boston, MA}{\underline{Undegraduate Quantum Computing/Optics Researcher}}{September 2017 - May 2018}
 	\begin{itemize}
 	    \resitem{Defended \emph{Senior Honors Thesis} on demonstrating the potential of a \emph{linear-optical system} to implement \emph{quantum simulations of a molecule}.}
         \resitem{Constructed the \emph{Hamiltonian}, calculated the \emph{eigenstates/eigenvalues}, and simulated the \emph{quantum walks} of a \emph{benzene topology} of connected directionally unbiased optical multiports using \emph{Python} and hand calculations}
